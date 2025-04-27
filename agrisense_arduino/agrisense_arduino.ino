@@ -132,5 +132,5 @@ void loop() {
 
   saveSensorData(bme.temperature, bme.humidity, bme.pressure / 100.0);
 
-  delay(2000);
+  delay(SENSOR_READ_INTERVAL_MS);
 }
